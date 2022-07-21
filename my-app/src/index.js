@@ -9,6 +9,9 @@ import React from 'react'
 //import react-dom to render stuff on the page
 import ReactDom from 'react-dom'
 
+//React 18 way to render stuff on the page
+import { createRoot } from 'react-dom/client';
+
 
 /***** Basic Rules and Examples *****/
 
@@ -66,13 +69,27 @@ function Part5() {
   );
 }
 
-//these are nested components
+//these are nested components - can be const or var
 //implicit return
 const Person = () => <h1>John Doe - Component</h1>
-//explicit return[[[[[[[]]]]]]][[  [[[]]]]]
+//explicit return
 const Message = () => {
   return <p>This is my message - component</p>
 }
 
 //renders stuff on page, needs the component name (preferrably in self-closed tag) and source (root id)
-ReactDom.render(<Part5 />, document.getElementById('root'));
+//renders the last one if renders to the same id
+// ReactDom.render(<Part1 />, document.getElementById('root'));
+// ReactDom.render(<Part3 />, document.getElementById('root'));
+// ReactDom.render(<Part4 />, document.getElementById('root'));
+// ReactDom.render(<Part2 />, document.getElementById('root'));
+// ReactDom.render(<Part5 />, document.getElementById('root'));
+
+//React 18 way to render stuff on page
+// const rootContainer = document.getElementById('root');
+// const root = createRoot(rootContainer);
+// root.render(<Part1 />);
+//or
+// createRoot(rootContainer).render(<Part2 />);
+//or
+createRoot(document.getElementById('root')).render(<Part5 />);
