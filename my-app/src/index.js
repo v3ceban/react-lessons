@@ -7,10 +7,7 @@
 //es6 react import from node_modules
 import React from 'react'
 //import react-dom to render stuff on the page
-import ReactDom from 'react-dom'
-
-//React 18 way to render stuff on the page
-import { createRoot } from 'react-dom/client';
+import ReactDOM from 'react-dom/client';
 
 
 /***** Basic Rules and Examples *****/
@@ -87,9 +84,10 @@ const Message = () => {
 
 //React 18 way to render stuff on page
 // const rootContainer = document.getElementById('root');
-// const root = createRoot(rootContainer);
+// const root = ReactDOM.createRoot(rootContainer);
 // root.render(<Part1 />);
 //or
-// createRoot(rootContainer).render(<Part2 />);
+// const rootContainer = document.getElementById('root');
+// ReactDOM.createRoot(rootContainer).render(<Part2 />);
 //or
-createRoot(document.getElementById('root')).render(<Part5 />);
+ReactDOM.createRoot(document.getElementById('root')).render(<Part5 />);
