@@ -1,3 +1,4 @@
+# Hey!
 Welcome to my personal repository for React projects and learning! This repository serves as a space where I experiment, practice, and showcase my journey with React development. Whether you're stumbling upon this repository by chance or intention, feel free to explore the projects and codebases contained within.
 
 # Purpose
