@@ -1,0 +1,77 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap");
+
+* {
+	box-sizing: border-box;
+}
+
+body {
+	margin: 0;
+	font-family: "Inter", sans-serif;
+}
+
+header {
+	background: #21222a;
+	padding: 0 25px;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+
+	nav {
+		display: flex;
+	}
+
+	h1 {
+		color: #61dafb;
+		font-weight: 700;
+		font-size: 22.25px;
+		letter-spacing: -0.05em;
+	}
+
+	h2 {
+		color: #deebf8;
+		font-weight: 600;
+		font-size: 16px;
+	}
+
+	img {
+		width: 29px;
+		margin-right: 7px;
+	}
+}
+
+main {
+	color: #fff;
+	background-color: #282d35;
+	background-image: url("/img/reactjs-icon-bg.svg");
+	background-repeat: no-repeat;
+	background-position: center right;
+	padding: 57px 27px;
+
+	h3 {
+		margin: 0;
+		font-weight: 700;
+		font-size: 39px;
+		letter-spacing: -0.05em;
+	}
+
+	li {
+		font-size: 16px;
+		line-height: 20px;
+		margin-bottom: 10px;
+
+		//Styles default bulletpoints
+		&::marker {
+			color: #61dafb;
+			font-size: 1.3em;
+		}
+
+		//Replaces current bulletpoints (ul { list-style: none })
+		// &::before {
+		// 	content: "\2022";
+		// 	color: #61dafb;
+		// 	display: inline-block;
+		// 	width: 1.5em;
+		// 	margin-left: -1.5em;
+		// }
+	}
+}
