@@ -1,4 +1,4 @@
-export function setupCounter(element) {
+export function generatePassword(element) {
   const random = (length) => {
     return Math.floor(Math.random() * length);
   };
