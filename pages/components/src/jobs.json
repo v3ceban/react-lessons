@@ -1,0 +1,17 @@
+[
+  {
+    "company": "Google",
+    "position": "Developer",
+    "salary": 1000
+  },
+  {
+    "company": "Facebook",
+    "position": "Designer",
+    "salary": 2000
+  },
+  {
+    "company": "Apple",
+    "position": "Manager",
+    "salary": 3000
+  }
+]
