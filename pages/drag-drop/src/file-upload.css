@@ -1,0 +1,17 @@
+.container {
+  border: 2px dashed #ccc;
+  padding: 20px;
+  text-align: center;
+  cursor: pointer;
+}
+
+.input {
+  display: block;
+  margin: 20px 0;
+}
+
+.textarea {
+  width: 100%;
+  height: 100px;
+  margin: 20px 0;
+}
